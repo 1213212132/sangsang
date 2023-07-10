@@ -39,6 +39,30 @@ $(function () {
 
 
 
+    $('.mobile_btn').on('click', function () {
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+    });
 
+    $('.gnb .main_menu>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
 
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.sub').stop().slideUp();
+        }
+    });
+
+    $(window).on('resize', function () {
+        $('.gnb').removeClass('on')
+    });
+
+    $('.gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+    })
 })

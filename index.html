@@ -20,35 +20,80 @@
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="header_wrap">
-                <h1 class="logo">
-                    <a href="/">
-                        <img src="./images/logo.png" alt="상상 짬뽕">
-                    </a>
-                </h1>
-                <div class="gnb_area">
+
+            <h1 class="logo">
+                <a href="/">
+                    <img src="./images/logo.png" alt="상상 짬뽕">
+                </a>
+            </h1>
+            <div class="gnb_area">
+                <div class="inner">
 
                     <nav class="gnb">
-                        <div class="inner">
-                            <h2 class="blind">메뉴</h2>
-                            <ul>
 
-                                <li class="gnb_menu"><a href=""><img src="./images/mob_gnb_menu.png" alt=""></a></li>
-                                <li><a href="">브랜드</a></li>
-                                <li><a href="">메뉴안내</a></li>
-                                <li><a href="">매장안내</a></li>
-                                <li><a href="">창업안내</a></li>
-                                <li><a href="">소식</a></li>
+                        <h2 class="blind">메뉴</h2>
 
-                            </ul>
 
-                        </div>
+                        <ul class="main_menu">
+
+                            <li class="gnb_menu"><a href=""><img src="./images/mob_gnb_menu.png" alt=""></a></li>
+                            <li>
+                                <a href="/">브랜드</a>
+                                <ul class="sub">
+                                    <li><a href="">브랜드스토리</a></li>
+                                    <li><a href="">경쟁력</a></li>
+                                    <li><a href="">대표인사말</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/">메뉴안내</a>
+                                <ul class="sub">
+                                    <li><a href="">식사메뉴</a></li>
+                                    <li><a href="">요리메뉴</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/">매장안내</a>
+                                <ul class="sub">
+                                    <li><a href="">매장안내</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/">창업안내</a>
+                                <ul class="sub">
+                                    <li><a href="">창업절차 및 비용</a></li>
+                                    <li><a href="">인테리어</a></li>
+                                    <li><a href="">창업문의</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/">소식</a>
+                                <ul class="sub">
+                                    <li><a href="">공지사항</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
 
                     </nav>
                 </div>
 
-
             </div>
+
+            <div class="mobile_btn">
+                <button>
+                    <span class="blind">모바일메뉴</span>
+                </button>
+            </div>
+
+
         </header>
 
 
@@ -106,7 +151,7 @@
                         <img src="./images/brand01.jpg" alt="">
                     </div>
 
-                    <div class="brand_underimg">
+                    <div class="brand_underimg" data-aos="fade-up">
                         <img src=" ./images/brand02.jpg" alt="">
                     </div>
                 </div>
@@ -226,7 +271,9 @@
                         <ul class="clear">
                             <li>
 
-                                <img src="img/intro_icon01.png">
+                                <img src="images/free-icon-jajangmyeon-8375236.png">
+
+
                                 <div class="icon_txt">
                                     <h3>중국집은 90% 고인물이다</h3>
                                 </div>
@@ -238,8 +285,8 @@
                             </li>
                             <li>
 
-                                <img src="img/intro_icon01.png">
-                                <div class="icon_txt">
+                                <img src="images/free-icon-online-payment-5575931.png">
+                                <div class=" icon_txt">
                                     <h3>시대에 흐름에 맞는 멀티매장</h3>
                                 </div>
                                 <p class="icon_desc">
@@ -249,8 +296,7 @@
 
                             </li>
                             <li>
-
-                                <img src="img/intro_icon01.png">
+                                <img src="images/free-icon-competition-7188033.png">
                                 <div class="icon_txt">
                                     <h3>엄청난 경쟁력</h3>
                                 </div>
@@ -262,7 +308,7 @@
                             </li>
                             <li>
 
-                                <img src="img/intro_icon01.png">
+                                <img src="images/free-icon-low-price-6490826.png">
                                 <div class="icon_txt">
                                     <h3>평수대비 가성비 최고</h3>
                                 </div>
@@ -274,7 +320,7 @@
                             </li>
                             <li>
 
-                                <img src="img/intro_icon01.png">
+                                <img src="images/free-icon-profit-margin-10762007.png">
                                 <div class="icon_txt">
                                     <h3>말도 안되는 마진율</h3>
                                 </div>
@@ -285,7 +331,8 @@
                             </li>
                             <li>
 
-                                <img src="img/intro_icon01.png">
+                                <img src="images/free-icon-shopping-bag-743131.png">
+
                                 <div class="icon_txt">
                                     <h3>트랜드에 구애받지 않는 아이템</h3>
                                 </div>
@@ -317,9 +364,27 @@
 
 
                     <div class="form_wrap">
-                        <div class="field-label"><label for="input_text_1" class="chk_nc">성함</label></div>
-                        <div class="field-input"><input type="text" name="form_field1" id="input_text_1"></div>
-            </section>
+                        <div class="field-label">
+                            <label for="input_text" class="name">성함</label>
+                        </div>
+                        <div class="field_input">
+                            <input type="text" name="form_field1">
+                        </div>
+
+                        <div class="phone_wrap"><input type="hidden" name="field_idx[]">
+                            <input type="hidden" name="field_type[]" value="phone"><input type="hidden" name="field1[]"
+                                value="inputbox">
+                            <div class="field_label"><label for="phone_5">휴대폰</label></div>
+                            <div class="field_input"><input type="tel" name="phone" class="phone_input"></div>
+                        </div>
+
+
+                        <div class="textarea_wrap"><input type="hidden" name="field_idx[]">
+
+
+                            <textarea class="textarea"></textarea>
+                        </div>
+                    </div>
 
 
         </main>
