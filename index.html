@@ -364,28 +364,50 @@
 
 
                     <div class="form_wrap">
-                        <div class="field-label">
-                            <label for="input_text" class="name">성함</label>
-                        </div>
-                        <div class="field_input">
-                            <input type="text" name="form_field1">
-                        </div>
-
-                        <div class="phone_wrap"><input type="hidden" name="field_idx[]">
-                            <input type="hidden" name="field_type[]" value="phone"><input type="hidden" name="field1[]"
-                                value="inputbox">
-                            <div class="field_label"><label for="phone_5">휴대폰</label></div>
-                            <div class="field_input"><input type="tel" name="phone" class="phone_input"></div>
-                        </div>
+                        <div class="inner">
 
 
-                        <div class="textarea_wrap"><input type="hidden" name="field_idx[]">
+                            <div class="name_wrap">
+                                <div class="field_label">
+                                    <label for="input_text" class="name_move">이름 :</label>
+                                </div>
+                                <div class="field_input">
+                                    <input type="text" name="name" class="name_input">
+                                </div>
+                            </div>
 
 
-                            <textarea class="textarea"></textarea>
+                            <div class="phone_wrap">
+
+                                <div class="field_label"><label for="phone" class="phone_move">휴대폰 :</label></div>
+                                <div class="field_input"><input type="tel" name="phone" class="phone_input"></div>
+                            </div>
+
+
+
+
+                            <div class="textarea_wrap">
+                                <div class="field_label"><label for="txt" class="textarea_move">사유 :</label></div>
+                                <textarea class="textarea"></textarea>
+                            </div>
+
+                            <div class="form_agree_wrap">
+
+                                <input type="checkbox" name="agree_chk" value="1" id="agreeChk">
+                                <label for="agreeChk">개인정보처리방침에 동의합니다.</label>
+                                <span class="view_privacy">[자세히보기]</span>
+
+                            </div>
                         </div>
                     </div>
 
+
+                </div>
+
+                <div class="btn">
+                    <a href="">접수신청</a>
+                </div>
+            </section>
 
         </main>
 

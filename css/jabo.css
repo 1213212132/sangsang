@@ -153,6 +153,7 @@ body {
 
         /*r*/
         border: none;
+        display: none;
     }
 
     .header h1 {
@@ -273,6 +274,7 @@ body {
 
         /* r */
         position: static;
+        transition: none;
         background: rgba(0, 0, 0, 1);
         padding: 0 0 0 0;
     }
@@ -282,7 +284,7 @@ body {
         display: block;
         top: 70px;
 
-
+        /*r*/
         display: none;
     }
 
@@ -441,12 +443,12 @@ body {
     .visual_wrap {
         position: relative;
 
-        top: 60px;
+        top: 10px;
 
         width: 100%;
-        height: 200px;
+        height: 100%;
         text-align: center;
-        padding-bottom: 6%;
+        padding-bottom: 11%;
     }
 
     .visual_wrap .visual {
@@ -641,8 +643,8 @@ body {
         content: "";
         position: absolute;
         border-bottom: 1px solid #ed2623;
-        top: -15px;
-        width: 474px;
+        top: -45px;
+        width: 604px;
         height: 100px;
     }
 
@@ -653,7 +655,7 @@ body {
         top: -96px;
         padding: 80px 0 0;
 
-        padding-bottom: 30rem;
+
     }
 
     .brand .inner {
@@ -667,22 +669,27 @@ body {
 
 
     .brand .brand_txt {
-        position: absolute;
+        position: relative;
         left: 4%;
-        top: 125%;
+        top: 320px;
         float: right;
         width: 53%;
         transform: translateY(-50%);
         /*r*/
+        position: static;
+        transform: none;
         float: none;
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
+
+
     }
 
 
     .brand .brand_txt .txt_content p {
         color: #929292;
         line-height: 1.4;
-        font-size: 11;
+        font-size: 1rem;
         margin-bottom: 30px;
         text-align: left;
 
@@ -693,27 +700,35 @@ body {
 
     .brand .brand_img img {
         /*r*/
-        position: relative;
-        width: 50%;
-        top: 450px;
 
+        text-align: center;
+        box-shadow: none;
 
     }
 
 
     .brand .brand_img img,
     .brand .brand_underimg img {
+
+
+
         box-shadow: 12px 12px 0 rgba(241, 227, 227, .3);
+
+        box-shadow: none;
     }
 
     .brand .brand_underimg {
 
         position: absolute;
         z-index: 1;
-        right: 30px;
-        bottom: -600px;
+        left: 31px;
+        bottom: -400px;
+
         opacity: 1;
-        width: 58%;
+        width: 70%;
+        z-index: -1;
+
+        display: none;
     }
 
 
@@ -882,7 +897,163 @@ body {
 }
 
 
+/*슬릭 반응형*/
 
+
+
+@media (max-width : 768px) {
+
+    .slide_visual .slide_tit h2 {
+        font-size: 2.67rem;
+        font-weight: 800;
+        letter-spacing: -.5px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+
+
+    }
+
+
+    .slide_tit>.txt_white p {
+        float: left;
+        font-size: 1.34rem;
+        font-weight: 700;
+        margin-right: 20px;
+        letter-spacing: -.7px;
+        color: #fff;
+
+        font-size: 1rem;
+    }
+
+    .slide_tit>.txt_white .line::before {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #fff;
+        top: 75px;
+        width: 950px;
+        height: 100px;
+    }
+
+
+
+    /*슬릭*/
+
+
+
+
+    .slide_wrap .main_slide .itm p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: auto;
+        height: 100%;
+    }
+
+    .main_slide .slide_box {
+        position: relative;
+        width: 270px;
+        min-height: 280px;
+        height: 356px;
+        background-color: #fff;
+        vertical-align: middle;
+
+
+
+
+
+    }
+
+    .main_slide .itm img {
+
+        position: absolute;
+        top: 50%;
+        left: 40%;
+
+        transform: translate(-50%, -50%);
+        width: 250px;
+
+
+
+    }
+
+
+    .main_slide .itm span {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        line-height: 1.5;
+        font-size: 1rem;
+
+        word-break: keep-all;
+    }
+
+
+
+
+    .slide_wrap .main_slide .slick-slide {
+        padding: 0 10px;
+    }
+
+    /*에로우 만들기*/
+    .slide_visual .arrows {
+
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 100%;
+        max-width: 1300px;
+        z-index: 8;
+        display: none;
+
+    }
+
+    .slide_visual:hover .arrows {
+
+        display: block;
+
+        display: none;
+    }
+
+    .slide_visual .arrows i {
+
+        font-size: 20px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+
+
+
+    }
+
+    .slide_visual .arrows .left {
+
+        position: absolute;
+
+
+        z-index: 1;
+        top: 0;
+        left: 15px;
+
+        display: none;
+    }
+
+    .slide_visual .arrows .right {
+
+        position: absolute;
+        top: 0;
+        right: 15px;
+
+        direction: none;
+    }
+
+
+
+}
 
 /*창업안내*/
 
@@ -982,6 +1153,107 @@ body {
 }
 
 
+@media (max-width : 768px) {
+
+    .shop_open {
+        position: relative;
+        width: 100%;
+        padding: 110px 0 100px;
+        background: url(../images/intro_bg.jpg) center center;
+        filter: invert(10%);
+        background-size: cover;
+
+    }
+
+
+
+
+    .shop_open li img {
+        margin-bottom: 20px;
+    }
+
+
+    .shop_open .shop_tit {
+        margin-bottom: 65px;
+    }
+
+    .shop_open .shop_tit h2 {
+        font-size: 1.8em;
+        font-weight: 800;
+        letter-spacing: -.5px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+
+    .shop_open .shop_tit>.txt_white p {
+        float: left;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-right: 20px;
+        letter-spacing: -.7px;
+        color: #fff;
+
+    }
+
+    .shop_open .shop_tit>.txt_white .line {
+        overflow: hidden;
+        height: 10px;
+        margin-top: 5px;
+
+    }
+
+
+    .shop_open .shop_tit>.txt_white .line::before {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid red;
+        top: 65px;
+        width: 995px;
+        height: 100px;
+    }
+
+
+
+    .shop_open .icon_box {
+        background-color: rgba(255, 255, 255, .85);
+        padding: 3%;
+    }
+
+
+    .shop_open .icon_box li {
+
+
+        height: 194px;
+        position: relative;
+        left: 7px;
+        display: inline-table;
+        width: 110px;
+
+    }
+
+
+    .shop_open .icon_box h3 {
+        font-size: 1rem;
+
+        margin-bottom: 15px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #ed2623;
+        word-break: keep-all;
+    }
+
+    .shop_open .icon_box p {
+        font-size: 0.77rem;
+        color: #747474;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+
+}
+
+
 /* 문의박스*/
 
 .cliam {
@@ -1004,6 +1276,7 @@ body {
     font-size: 2.34rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    word-break: keep-all;
 }
 
 .cliam .cliam_tit .hr {
@@ -1013,12 +1286,92 @@ body {
     margin: 20px auto;
 }
 
-.cliam .cliam_tit h2 {
+.cliam .cliam_tit p {
 
-    word-break: keep-all;
+
+    font-size: 1rem;
+    padding-bottom: 3rem;
 }
 
 
+/*form 만들기*/
+
+.form_wrap {
+    position: relative;
+
+}
+
+.form_wrap .name_wrap {
+    position: absolute;
+    display: flex;
+    right: 50%;
+}
+
+.form_wrap .name_move {
+    margin: 10px;
+}
+
+.form_wrap .name_input {
+    margin-left: 0px;
+}
+
+.form_wrap .phone_wrap {
+    position: absolute;
+    display: flex;
+
+    right: 33.3%;
+}
+
+.form_wrap .phone_move {
+    margin: 10px;
+}
+
+
+.form_wrap .phone_input {
+    margin: px;
+}
+
+.form_wrap .textarea_wrap {
+    position: absolute;
+    display: flex;
+    left: 670px;
+    bottom: -100px;
+}
+
+.form_wrap .textarea_move {
+    margin: 10px;
+}
+
+.form_wrap .form_agree_wrap {
+    position: absolute;
+    bottom: -50px;
+    right: 35.9%;
+    font-size: 0.7rem;
+}
+
+.cliam {
+    position: relative;
+}
+
+.cliam .btn {
+    position: absolute;
+    top: 85%;
+    left: 62.2%;
+}
+
+.cliam .btn a {
+
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 1.07rem;
+    background-color: #393939;
+    border-radius: 0;
+    padding: 10px;
+}
+
+
+.phone_wrap .phone_input {}
 
 /*footer*/
 
