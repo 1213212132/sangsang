@@ -48,7 +48,7 @@ $(function () {
                 breakpoint: 380, //화면 사이즈 368px
                 settings: {
                     //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             }
         ]
@@ -68,6 +68,42 @@ $(function () {
         $(this).toggleClass('on');
         $('.gnb').toggleClass('on');
     });
+
+
+
+
+
+    $('.gnb .main_menu>.mob_bar_one>a').on('click', function () {
+        $(this).toggleClass('on');
+        $('.sub_one').toggleClass('on');
+
+    });
+    $('.gnb .main_menu>.mob_bar_two>a').on('click', function () {
+        $(this).toggleClass('on');
+        $('.sub_two').toggleClass('on');
+
+    });
+    $('.gnb .main_menu>.mob_bar_three>a').on('click', function () {
+        $(this).toggleClass('on');
+        $('.sub_three').toggleClass('on');
+
+    });
+
+    $('.gnb .main_menu>.mob_bar_four>a').on('click', function () {
+        $(this).toggleClass('on');
+        $('.sub_four').toggleClass('on');
+
+    });
+    $('.gnb .main_menu>.mob_bar_five>a').on('click', function () {
+        $(this).toggleClass('on');
+        $('.sub_five').toggleClass('on');
+
+    });
+
+
+
+
+
 
     $('.gnb .main_menu>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
