@@ -127,6 +127,12 @@ body {
 /*반응형 메뉴*/
 
 @media (max-width : 768px) {
+
+    html {
+
+        font-size: 62.5%
+    }
+
     body {
         overflow-x: hidden;
 
